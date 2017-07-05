@@ -1,11 +1,18 @@
 #ifndef RADIO_H
 #define RADIO_H
-
+#include <QMediaPlayer>
 
 class Radio
 {
 public:
-    Radio();
+    Radio(QUrl RadioUrl);
+    void start();
+    void stop();
+    void set_voice(int reng);
+    ~Radio();
+private:
+QMediaPlayer* ptr_mediaPlayer;
+
 };
 
 #endif // RADIO_H
