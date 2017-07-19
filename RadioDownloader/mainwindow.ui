@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>start</string>
+     <string>play</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>stop</string>
+     <string>pause</string>
     </property>
    </widget>
    <widget class="QSlider" name="verticalSlider">
@@ -51,6 +51,45 @@
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>100</y>
+      <width>51</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dw start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>51</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dw stop</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>80</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>time</string>
     </property>
    </widget>
   </widget>

@@ -8,7 +8,7 @@ public:
     Radio(QUrl RadioUrl);
     void start();
     void stop();
-    void set_voice(int reng);
+    void set_volume(int reng);
     ~Radio();
 private:
 QMediaPlayer* ptr_mediaPlayer;

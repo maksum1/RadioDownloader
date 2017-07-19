@@ -11,17 +11,15 @@ void Radio::start()
 {
     ptr_mediaPlayer->play();
 }
+
 void Radio::stop()
 {
     ptr_mediaPlayer->stop();
 }
 
-void Radio::set_voice(int reng)
+void Radio::set_volume(int reng)
 {
-
-
     ptr_mediaPlayer->setVolume(reng);
-
 }
 
 Radio::~Radio()

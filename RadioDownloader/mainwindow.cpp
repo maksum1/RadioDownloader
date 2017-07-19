@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ptr_Radio=new Radio(QUrl("http://online-hitfm.tavrmedia.ua/HitFM"));
-    //ptr_Radio=new Radio(QUrl("http://178.136.237.243:8000/galychyna"));
+    //ptr_Radio=new Radio(QUrl("http://online-hitfm.tavrmedia.ua/HitFM"));
+    ptr_Radio=new Radio(QUrl("http://178.136.237.243:8000/galychyna"));
 }
 
 MainWindow::~MainWindow()
@@ -31,6 +31,10 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_verticalSlider_actionTriggered(int action)
 {
-    int temp=ui->verticalSlider->value();
-    ptr_Radio->set_voice(temp);
+    ptr_Radio->set_volume(ui->verticalSlider->value());
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+
 }

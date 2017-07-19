@@ -3,7 +3,7 @@
 # Project created by QtCreator 2017-07-05T12:54:18
 #
 #-------------------------------------------------
-
+QT += network
 QT       += core gui
 QT += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    radio.cpp
+    radio.cpp \
+    dowloadstream.cpp
 
 HEADERS += \
         mainwindow.h \
-    radio.h
+    radio.h \
+    dowloadstream.h
 
 FORMS += \
         mainwindow.ui

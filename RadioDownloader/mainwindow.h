@@ -24,6 +24,8 @@ private slots:
 
     void on_verticalSlider_actionTriggered(int action);
 
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
     Radio* ptr_Radio;
